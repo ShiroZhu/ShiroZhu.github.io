@@ -3,21 +3,27 @@
 
 <head>
     <meta charset="utf-8">
-    <title>代码烟花秀</title>
+    <title>带你看真的烟花</title>
     <style>
         html,
         * {
             margin: 0;
             padding: 0
         }
-
+        
         body {
-            background-image: url(bg.png);
-            background-size: 100% 100%;
-            background-size: 100%; 
-            background-repeat:no-repeat;
-        }
+            font-size: 12px;
+            background: url(' bg1.png ') no-repeat 0 0;
+            background-size: cover;
+            background-attachment: fixed
 
+        }
+        @media(max-width: 768px) {
+            body {
+                background-image:url(' bg2.png ');
+
+            }
+        }
         .demo {
             margin: 0 auto;
             width: 100%;
